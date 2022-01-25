@@ -3,18 +3,7 @@ body {
   color: #555;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h2 {
   margin-top: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -49,27 +38,30 @@ h6,
   padding-top: 40px;
   padding-bottom: 40px;
   height: 236px;
+  background: #fbfbfb;
+  color: #6f6bb3;
+  align-items: center;
+  font-family: Red Hat Display;
 }
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
-  font-size: 40px;
-  font-weight: 400;
-  color: rgb(116, 85, 255);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  display: flex;
 }
 .blog-description {
-  font-size: 20px;
-  color: rgb(116, 85, 255);
-}
-
-/*
- * Main column and sidebar layout
- */
-
-.blog-main {
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
 }
+
 /*
  * Blog posts
  */
@@ -78,31 +70,98 @@ h6,
   margin-bottom: 60px;
 }
 .blog-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
+  /* H3 */
+
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
 }
 .blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 5px solid #eee;
-  font-style: italic;
+  position: flex;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
 }
 
+.author {
+  width: 86px;
+  height: 24px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+}
+.o {
+  width: 6px;
+  height: 6px;
+  background: #a73a66;
+  border-radius: 50%;
+}
+h5 {
+  width: 296px;
+  height: 356px;
+
+  /* White */
+
+  background: #ffffff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10%;
+}
+.name {
+  position: flex;
+  width: 67px;
+  height: 32px;
+  font-family: Red Hat Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 20%;
+  padding-left: 10%;
+  /* identical to box height */
+
+  color: #000000;
+}
+.mb-0 {
+  /* Paragraph 14 */
+  padding: 5%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #000000;
+}
 /*
  * Footer
  */
 
 .blog-footer {
-  padding: 40px 0;
   color: #999;
   text-align: center;
   background-color: #6f6bb3;
   border-top: 1px solid #e5e5e5;
+  height: 150px;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
